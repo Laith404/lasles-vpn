@@ -1,0 +1,245 @@
+/* === DESKTOP FIRST === */
+
+/* xl <= Extra extra large (xxl) */
+@media (min-width : 1400px) {
+	.review__carousel {
+		max-width: calc(1320px + 60px)!important;
+	}
+}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {
+	.review__carousel {
+		max-width: calc(1140px + 100px);
+	}
+}
+
+/* md <= Large (lg) */
+@media (max-width : 992px) {
+	.hamburger {
+		display: block;
+		z-index: 10000;
+		
+	}
+	.hamburger.is-active {
+		position: fixed;
+		right: .625rem;
+		top: 1.0625rem;
+	}
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+		background: var(--btn);
+	}
+	.header__menu {
+		position: fixed;
+		top: 0;
+		left: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+		height: 100vh;
+		background: #fff;
+		z-index: 1000;
+		opacity: 0;
+	}
+	.header__menu.active {
+		left: 0;
+		opacity: 1;
+		transition: .5s;
+	}
+	.header__menu.active .header__link {
+		opacity: 1;
+		transform: scale(1);
+	}
+	.title {
+		font-size: 1.75rem;
+	}
+	.header__link {
+		margin: 1.25rem 0;
+		font-size: 40px;
+		line-height: 1.25;
+		opacity: 0;
+		transform: scale(0);
+		transition: .5s;
+	}
+	.header__menu.active .header__link:nth-child(1) {
+		transition-delay: .45s;
+	}
+	.header__menu.active .header__link:nth-child(2) {
+		transition-delay: .50s;
+	}
+	.header__menu.active .header__link:nth-child(3) {
+		transition-delay: .55s;
+	}
+	.header__menu.active .header__link:nth-child(4) {
+		transition-delay: .65s;
+	}
+	.header__menu.active .header__link:nth-child(5) {
+		transition-delay: .75s;
+	}
+	.header__reg {
+		z-index: 1001;
+		font-size: 25px;
+		position: fixed;
+		left: -100%;
+		opacity: 0;
+		animation: none;
+	}
+	.header__reg.active {
+		left: 2.5rem;
+		top: 1.5rem;
+		opacity: 1;
+		transition: .5s;
+		transition-delay: .5s;
+		transition-property: opacity;
+	}
+	.preview__content {
+		margin: 0 0 0 1.25rem;
+		padding: 0 0 calc(6.25rem / 2) 0;
+	}
+	.preview__img {
+		margin: 0 0 2.1875rem 0;
+	}
+	.preview__title {
+		font-size: 2.5rem!important;
+	}
+	.preview__sub-title {
+		font-size: 1.25rem!important;
+		margin: 0 0 2.1875rem 0;
+	}
+	
+	.btn {
+		padding: 13px 60px;
+	}
+	.banner__block {
+		margin: 0 auto;
+		justify-content: flex-start;
+		width: 200px;
+		padding: 3.5rem 0;
+	}
+	.banner__block:nth-child(2):before{
+		width: 7.8rem;
+		height: .125rem;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.banner__block:nth-child(2):after{
+		width: 7.8rem;
+		height: .125rem;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.function__content {
+		margin: 4.0625rem 0 4.375rem 1.25rem
+	}
+
+	.plan__subtitle {
+		width: 80%;
+	}
+
+	.plan__blocks {
+		margin: 1.875rem 3.125rem 0;
+	}
+
+	.plan__block {
+		margin: .9375rem 0;
+		min-height: 42.5rem;
+		padding: 2.5rem 0 3.125rem;
+	}
+	.global__content {
+		margin: 4rem 0 0 0;
+	}
+	
+	.global__map {
+		margin: 5rem 0 0 0;
+	}
+
+	.global__subtitle {
+		width: 80%;
+	}
+
+	.review__content {
+		margin: 4.5rem 0 4.1875rem 0
+	}
+
+	.review__subtitle {
+		width: 80%;
+	}
+
+	.review__carousel {
+		margin: 1.875rem auto 0;
+	}
+	.slick-next {
+		right: 3.125rem;
+	}
+	.slick-prev {
+		right: 8.125rem;
+	}
+	.slick-dots {
+		bottom: calc(-1.5625rem - 4.375rem);
+		left: 1.25rem;
+	}
+	.footer__left {
+		display: block;
+		margin: 0 0 1.25rem;
+	}
+	.footer__socials {
+		padding: 0 0 .9375rem;
+	}
+	.footer__list {
+		display: block;
+		text-align: center;
+		padding: 0 0 1.25rem;
+	}
+}	
+
+/* sm <= Medium (md) */
+@media (max-width : 768px) {
+	.banner-footer__content {
+		padding: 1.75rem 1.875rem
+	}
+	.header__content {
+		padding: 1.125rem 0 0 0;
+	}
+	.header__reg {
+		font-size: 16px;
+	}
+	.header__btn {
+		padding: .5rem 1.8125rem;
+	}
+	.header__link {
+		font-size: 20px;
+	}
+	.preview__img {
+		margin: 0;
+	}
+	.preview__title {
+		font-size: 2rem!important;
+	}
+	.title {
+		font-size: 24px;
+	}
+	.review__carousel {
+		max-width: 100%;
+	}
+	.review__carousel-block {
+		width: 1.95%;
+	}
+	.banner-footer__subtitle {
+		padding: 0 0 30px;
+	}
+
+}
+
+/* xs <= Small (sm) */
+@media (max-width : 576px) {
+
+}
+
+
+
